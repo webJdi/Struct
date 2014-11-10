@@ -13,7 +13,26 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		box-sizing: border-box;
 	}
 	
-
+/* /////////// element alignment//////////////////////*/
+	
+	.align
+	{
+		display:block;
+	}
+	
+	.align.center
+	{
+		text-align: center;
+	}
+	.align.left
+	{
+		text-align: left;
+	}
+	.align.right
+	{
+		text-align: right;
+	}
+	
 /* ////////////// Grid design //////////////// */
 	.grid
 	{
@@ -44,6 +63,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	.grid > *
 		{
 			padding-left: 2em;
+			margin: 0.5%;
 		}
 	.grid + .grid > * 
 		{
@@ -117,18 +137,18 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* ////////////////////// Block width classes /////////////////////// */
 	
-	.b12 { width: 100% }
-	.b11 { width: 91.6666666667% }
-	.b10 { width: 83.3333333333% }
-	.b9 { width: 75% }
-	.b8 { width: 66.6666666667% }
-	.b7 { width: 58.3333333333% }
-	.b6 { width: 50% }
-	.b5 { width: 41.6666666667% }
-	.b4 { width: 33.3333333333% }
-	.b3 { width: 25% }
-	.b2 { width: 16.6666666667% }
-	.b1 { width: 8.3333333333% }
+	.b12 { width: 99% }
+	.b11 { width: 90.6666666667% }
+	.b10 { width: 82.3333333333% }
+	.b9 { width: 74% }
+	.b8 { width: 65.6666666667% }
+	.b7 { width: 57.3333333333% }
+	.b6 { width: 49% }
+	.b5 { width: 40.6666666667% }
+	.b4 { width: 32.3333333333% }
+	.b3 { width: 24% }
+	.b2 { width: 15.6666666667% }
+	.b1 { width: 7.3333333333% }
 	
 	
 /* ///////////////////// Navigation bars ////////////////////////*/
@@ -153,8 +173,22 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		{
 			position: fixed;
 			top:0;
-			left: 0;
 		}
 	.navbar.affix
 		{
+		}
+/* /////////////////////  Data blocks /////////////////////////////////////*/
+	.block
+		{
+			padding: 1em;
+			vertical-align:middle;
+			background-color: rgb(38, 164, 214);
+			color: #fff;
+		}
+	.block.round
+		{
+			border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+			-moz-border-radius: 0.5em;
+			-o-border-radius: 0.5em;
 		}
