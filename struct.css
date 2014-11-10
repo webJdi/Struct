@@ -54,7 +54,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	.grid:first-child > * 
 		{
-			padding-top: 0 !important;
+			padding-top: 0.5em ;
 		}
 		
 /*/////////// grid padding ///////////*/
@@ -180,8 +180,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* /////////////////////  Data blocks /////////////////////////////////////*/
 	.block
 		{
-			padding: 1em;
-			vertical-align:middle;
+			padding: 1.5em !important;
+			vertical-align:baseline;
+			text-align:center;
 			background-color: rgb(38, 164, 214);
 			color: #fff;
 		}
