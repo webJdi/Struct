@@ -13,6 +13,64 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		box-sizing: border-box;
 	}
 	
+/* /////////////////// Typography ////////////////////////// */
+
+	@font-face
+	{
+		font-family: 'Open Sans Light';
+		src:url(fonts/OpenSans-Light.ttf);
+	}
+	@font-face
+	{
+		font-family: 'Open Sans';
+		src:url(fonts/OpenSans-regular.ttf);
+	}
+	@font-face
+	{
+		font-family: 'Open Sans Bold';
+		src:url(fonts/OpenSans-Bold.ttf);
+	}
+	
+	h1,h2,h3,h4,h5,h6
+	{
+		font-family: 'Open Sans';
+		margin-bottom: 10px;
+	}
+	p,text,*
+	{
+		font-family: 'Open Sans Light';
+	}
+	
+	h1
+	{
+		font-size: 4em;
+	}
+	h2
+	{
+		font-size: 3em;
+	}
+	h3
+	{
+		font-size: 2.5em;
+	}
+	h4
+	{
+		font-size: 2em;
+	}
+	h5
+	{
+		font-size: 1.5em;
+	}
+	h6
+	{
+		font-size: 1.1em;
+	}
+	small
+	{
+		color: #5e5e5e;
+		font-size: 0.7em;
+	}
+	
 /* /////////// element alignment//////////////////////*/
 	
 	.align
@@ -69,10 +127,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		{
 			padding: 2em 0 0 2em;
 		}
-	.grid
+/*	.grid
 		{
 			margin-left: -2em;
-		}
+		} */
 		
 		
 		/* Half */
@@ -193,3 +251,46 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 			-moz-border-radius: 0.5em;
 			-o-border-radius: 0.5em;
 		}
+	.text-block
+	{
+		padding: 1.5em !important;
+		margin: 0.5em 0 0.5em 0 ;
+			vertical-align:baseline;
+			text-align:center;
+			background-color: rgb(226,226,226);
+			border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+			-moz-border-radius: 0.5em;
+			-o-border-radius: 0.5em;
+	}
+		
+		/*///////////////////// Media Queries //////////////////////////////////////////*/
+	@media (max-width:900px)
+	{
+		body
+		{
+			font-size: 0.8em;
+		}
+	}
+	@media (max-width:700px)
+	{
+		body
+		{
+			font-size: 0.6em;
+		}
+	}
+	
+	@media (max-width:400px)
+	{
+		body
+		{
+			font-size: 0.3em;
+		}
+	}
+	@media (max-width:200px)
+	{
+		body
+		{
+			font-size: 0.15em;
+		}
+	}
